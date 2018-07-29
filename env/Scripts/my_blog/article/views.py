@@ -12,9 +12,9 @@ def home(request):
 def detail(request,id):
 	try:
 		post=Article.objects.get(id=str(id))
-		return render(request,'article/post.html',{'post':post})
 	except:
 		return HttpResponse("hello")
+	return render(request,'article/post.html',{'post':post})
 
 def index(request):
  	return render(request,'article/index.html')
