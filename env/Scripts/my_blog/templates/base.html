@@ -35,8 +35,17 @@
                     <li class="nav-item">
                         <a class="button-success pure-button" href="/">专题</a>
                     </li>
+                    <li>
+                        <form  action="/search/" method="get">
+                        <input  type="text" name="sss" placeholder="搜索"></br>
+                        <input class="pure-input-3-3" type="submit" value="搜索"></br>
+                        </form>
+                    </li>
                     <li class="nav-item">
                         <a class="button-success pure-button" href="/">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="button-success pure-button" href="{% url "RSS" %}">RSS</a>  
                     </li>
                 </ul>
             </nav>
